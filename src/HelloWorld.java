@@ -2,45 +2,45 @@ public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello, World!");
 
-//      TODO: 1.  Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
+//      TODO: Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
         int myFavoriteNumber = 7;
         System.out.println("My favorite number is: " + myFavoriteNumber);
 
-//      TODO: 2.  Create a String variable named myString and assign a string value to it, then print the variable out to the console.
+//      TODO: Create a String variable named myString and assign a string value to it, then print the variable out to the console.
         String myString = "Here's a string: ";
         System.out.println(myString);
 
-//      TODO: 3.   Change your code to assign a character value to myString. What do you notice?
+//      TODO: Change your code to assign a character value to myString. What do you notice?
 
         myString += 'c';
         System.out.println(myString);
         // adds 'c' to existing string that was declared above.
 
-//      TODO: 4.  Change your code to assign the value 3.14159 to myString. What happens?
+//      TODO: Change your code to assign the value 3.14159 to myString. What happens?
 
         myString += 3.14159;
         System.out.println(myString);
         // adds value to existing strings stated above.
 
-//      TODO: 5.  Declare a long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
+//      TODO: Declare a long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
 
 //        long myNumber;
 //        System.out.println(myNumber);
         // code does not run because myNumber does not have an assigned value
 
-//       TODO: 6. Change your code to assign the value 3.14 to myNumber. What do you notice?
+//       TODO: Change your code to assign the value 3.14 to myNumber. What do you notice?
 
 //        long myNumber = 3.14;
 //        System.out.println(myNumber);
         //code will not run because "long" is not the appropriate data type to assign
 
-//       TODO: 7. Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
+//       TODO: Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
 
 //        long myNumber = 123L;
 //        System.out.println(myNumber);
         //The long value will run "123", but L is not registered because it is not a number.
 
-//      TODO: 8.   Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable
+//      TODO: Change your code to assign the value 123 to myNumber. Why does assigning the value 3.14 to a variable
 //       declared as a long not compile, but assigning an integer value does?
 
 //        long myNumber = 123;
@@ -48,14 +48,14 @@ public class HelloWorld {
         // the appropriate assignment for 3.14 would be to assign "double" bc of the decimal value. This has to do with
         // the distinction between the amount of bit space for the variable that you are assigning.
 
-//      TODO: 9.  Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
+//      TODO: Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
 
 //        float myNumber = 3.14;
 //        System.out.println(myNumber);
         //use double
         // add more decimal points to 3.14
 
-//      TODO: 10.  Copy and paste the following code blocks one at a time and execute them
+//      TODO: Copy and paste the following code blocks one at a time and execute them
 
 //        int x = 5;
 //        System.out.println(x++);
@@ -69,10 +69,10 @@ public class HelloWorld {
         // in the first code block, you are incrementing the initial assignment of x
         //in the second code block, your starting point when printed is the value of x + 1;
 
-//      TODO: 11.  Try to create a variable named class. What happens?
+//      TODO: Try to create a variable named class. What happens?
         // class is reserved and cannot be used as a variable
 
-//      TODO: 12.  Object is the most generic type in Java. You can assign any value to a variable of type Object.
+//      TODO: Object is the most generic type in Java. You can assign any value to a variable of type Object.
 //      What do you think will happen when the following code is run?
 
 //        String theNumberThree = "three";
@@ -83,7 +83,7 @@ public class HelloWorld {
 //        int three = (int) "three";
         // cannot run because you cant conver a string into int
 
-//        TODO: 13. Rewrite the following expressions using the relevant shorthand assignment operators:
+//        TODO: Rewrite the following expressions using the relevant shorthand assignment operators:
 
 //         int x = 4;
 //         x = x + 5;
@@ -117,9 +117,12 @@ public class HelloWorld {
 //       What happens if you increment a numeric variable past the type's capacity?
 //       Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
 
-
-
-
+        int num = 2147483647;
+        System.out.println(num);
+        num++;
+        System.out.println(num);
+        System.out.println(Integer.MAX_VALUE);
+        //the max number will reset to the lowest number that the value can hold.
     }
 }
 
