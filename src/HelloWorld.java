@@ -12,6 +12,11 @@ public class HelloWorld {
 
 //      TODO: Change your code to assign a character value to myString. What do you notice?
 
+        char letter = 'c';
+        System.out.println(letter);
+
+        System.out.println(myString + letter);
+
         myString += 'c';
         System.out.println(myString);
         // adds 'c' to existing string that was declared above.
@@ -77,9 +82,9 @@ public class HelloWorld {
 
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
-//        int three = (int) o;
-
-
+////        int three = (int) o;
+//
+//
 //        int three = (int) "three";
         // cannot run because you cant conver a string into int
 
