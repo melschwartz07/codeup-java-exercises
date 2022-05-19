@@ -5,15 +5,15 @@ public class MethodsExercises {
         //This will call the add method
         System.out.println("add two numbers: " + obj.add(10, 20));
         //This will call subtract method
-        System.out.println("Subtract two numbers: "+obj.subtract(30, 20));
+        System.out.println("Subtract two numbers: " + obj.subtract(30, 20));
         //This will call multiply method
         System.out.println("multipy two numbers: " + obj.multiply(6, 6));
         //This will call divide method
         System.out.println("divide two numbers: " + obj.divide(50, 10));
-        //call getInteger method
-        getInteger(1,10);
-        //call factorial method
-        factorial(1,10);
+//        call getInteger method
+        getInteger(1, 10);
+//        call factorial method
+//        factorial(1, 10);
     }
 
 // TODO: Basic Arithmetic
@@ -34,13 +34,16 @@ public class MethodsExercises {
     int add(int num1, int num2) {
         return num1 + num2;
     }
+
     int subtract(int num1, int num2) {
         return num1 - num2;
     }
+
     int multiply(int num1, int num2) {
         return num1 * num2;
     }
-    int divide(int num1, int num2){
+
+    int divide(int num1, int num2) {
         return num1 / num2;
     }
 // TODO: Create a method that validates that user input is in a certain range
@@ -72,15 +75,51 @@ public class MethodsExercises {
 //    Use the long type to store the factorial.
 //    Continue only if the user agrees to.
 
-    public static int factorial(int min, int max){
-        System.out.print("User, please enter a number from 1 to 10: ");
-        Scanner scanner = new Scanner(System.in);
-        int userInput = scanner.nextInt();
+//    public static long factorial(int min, int max) {
+//        System.out.print("User, please enter a number from 1 to 10: ");
+//        Scanner scanner = new Scanner(System.in);
+//        int userInput = scanner.nextInt();
+//
+//        while (userInput < min || userInput > max) {
+//            System.out.print("The number you entered is not valid. Please try again: ");
+//            userInput = scanner.nextInt();
+//        }
+//
+//        int num = userInput;
+//        long factor = 1;
+//        for (int i = 1; i <= num; i++) {
+//            factor = factor * i;
+//        }
+//        System.out.printf("%s! = %s = %s%n", userInput, userInput, factor);
+//
+//        System.out.print("Would you like to keep playing? Y/N: ");
+//        String userPlay = scanner.next();
+//
+//
+////        while (userPlay == "Y" || userPlay == "y") {
+////            System.out.print("User, please enter another number from 1 to 10: ");
+////            if (userInput < min || userInput > max) {
+////
+////            }
+////        }
+//    }
 
 
+// TODO: Create an application that simulates dice rolling.
+//  Ask the user to enter the number of sides for a pair of dice.
+//    Prompt the user to roll the dice.
+//    "Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
+//    Use static methods to implement the method(s) that generate the random numbers.
+//    Use the .random method of the java.lang.Math class to generate random numbers.
 
-
-    }
-
-
+//    public static void dice(){
+//        System.out.println("How many side are on your dice?: ");
+//        Scanner scanner = new Scanner(System.in);
+//        int sides = scanner.nextInt();
+//
+//
+//
+//
 }
+
+
