@@ -5,9 +5,10 @@ public class ArrayExercises {
 // TODO: Create a class inside of src named ArraysExercises. Create a main method for this class to do your work.
 //  What happens when you run the following code? Why is Arrays.toString necessary?
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(numbers);
+        //you need toString in order to display the numbers
         System.out.println(Arrays.toString(numbers));
 
 // TODO: Create an array that holds 3 Person objects. Assign a new instance of the Person class to each element.
@@ -18,14 +19,12 @@ public class ArrayExercises {
 
         Person[] names = new Person[3];
 
-        names[1] = new Person("Mel");
-        names[2] = new Person("Carlos");
-        names[3] = new Person("Fred");
+        names[0] = new Person("Mel");
+        names[1] = new Person("Dee");
+        names[2] = new Person("Fred");
 
-        for (Person person: names){
-            System.out.println(person.getName());
+        for (Person someone : names) {
+            System.out.println(someone.getName());
         }
-        System.out.println(names.length);
     }
-
 }
