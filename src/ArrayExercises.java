@@ -1,7 +1,6 @@
 import java.util.Arrays;
 public class ArrayExercises {
 
-
 // TODO: Create a class inside of src named ArraysExercises. Create a main method for this class to do your work.
 //  What happens when you run the following code? Why is Arrays.toString necessary?
 
@@ -27,7 +26,18 @@ public class ArrayExercises {
         for (Person someone : names) {
             System.out.println(someone.getName());
         }
+        System.out.println(names.length);
 
-        
+        Person[] arr = ArrayExercises.addPerson(names, new Person("Debbie"));
+
+        for (Person someone : arr){
+            System.out.println(someone.getName());
+        }
+        System.out.println(arr.length);
+    }
+    public static Person[] addPerson(Person[] names, Person someone){
+        Person[] newArr = Arrays.copyOf(names, names.length +1);
+        newArr[newArr.length - 1] = someone;
+        return newArr;
     }
 }
