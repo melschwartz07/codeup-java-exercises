@@ -1,6 +1,9 @@
 // TODO: Inside of src, create a package named shapes. Inside of shapes, create a class named Circle.
-//  This class should have a private radius field that is set through the constructor, and various methods
-//  for getting information about the circle, detailed below.
+//  This class should have a private radius field that is set through the constructor, and various methods for
+//  getting information about the circle, detailed below.
+//  public Circle(double radius)
+//  public double getArea()
+//  public double getCircumference()
 
 package shapes;
 
