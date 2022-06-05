@@ -1,5 +1,6 @@
 public class Person{
 
+    public int length;
     private String name;
 
     public Person(String name){
